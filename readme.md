@@ -14,20 +14,6 @@ This repository:
 
 All code, intermediate data, and results are provided for independent verification.
 
-## Key Findings Visuals
-
-![March Population Spikes](results/ADC_March_Spikes.png)  
-*Mean March population exceeds non-March by 1,126 inmates (p < 0.0001).*
-
-![Deaths After Parole Lag](results/ADC_Deaths_After_Parole_Lag.png)  
-*Correlation between paroles and deaths ~90 days later (r = 0.32, p < 0.01).*
-
-![Complete Timeline](results/ADC_Complete_Timeline.png)  
-*Full 2015–2025 series showing anomalies.*
-
-![Prison Rhythm](results/ADC_PRISON_RHYM.png)  
-*Seasonal patterns in admissions/releases.*
-
 ## Data Sources
 - Original PDFs: https://doc.arkansas.gov/correction/facilities/monthly-statistics/  
 - Raw PDFs and OCR intermediates (2.8 GB total, 287 files):  
