@@ -15,6 +15,11 @@ This repository:
 All code, intermediate data, and results are provided for independent verification.
 
 ## Data Sources
+- Original PDFs: https://doc.arkansas.gov/correction/facilities/monthly-statistics/  
+- Raw PDFs and OCR intermediates (2.8 GB total, 287 files):  
+  https://doi.org/10.5281/zenodo.17663528  (full archive for reproducibility)
+- Archived copies (where links have broken): preserved via Zenodo above  
+- Final cleaned dataset: `data/ADC_OCR_COMPLETE_UPDATED.csv`
 - Original PDFs: https://doc.arkansas.gov/correction/facilities/monthly-statics/
 - Archived copies (where links have broken): preserved in `/raw_pdfs/`
 - Final cleaned dataset: `data/ADC_OCR_COMPLETE_UPDATED.csv`
