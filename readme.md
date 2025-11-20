@@ -1,6 +1,6 @@
 # Arkansas Department of Corrections (ADC) Transparency Project
 Reconstructing and analyzing Arkansas prison population and death data (2015–2025)  
-GitHub: github.com/[your-username]/arkansas-prison-transparency
+GitHub: github.com/Leerrooy95/arkansas-prison-transparency
 
 ## Overview
 From January 2015 to March 2025, the Arkansas Department of Corrections (ADC) published monthly population and custody statistics in 287 separate PDF reports. These documents were released with inconsistent layouts, non-machine-readable tables, and no cumulative dataset. As a result, no publicly accessible, continuous time series existed for basic metrics such as monthly admissions, releases, parole grants, or in-custody deaths.
@@ -13,6 +13,20 @@ This repository:
   - Elevated deaths occurring approximately 90 days after large parole/release cohorts
 
 All code, intermediate data, and results are provided for independent verification.
+
+## Key Findings Visuals
+
+![March Population Spikes](results/ADC_March_Spikes.png)  
+*Mean March population exceeds non-March by 1,126 inmates (p < 0.0001).*
+
+![Deaths After Parole Lag](results/ADC_Deaths_After_Parole_Lag.png)  
+*Correlation between paroles and deaths ~90 days later (r = 0.32, p < 0.01).*
+
+![Complete Timeline](results/ADC_Complete_Timeline.png)  
+*Full 2015–2025 series showing anomalies.*
+
+![Prison Rhythm](results/ADC_PRISON_RHYM.png)  
+*Seasonal patterns in admissions/releases.*
 
 ## Data Sources
 - Original PDFs: https://doc.arkansas.gov/correction/facilities/monthly-statistics/  
@@ -41,5 +55,13 @@ Journalists, researchers, advocacy groups, and oversight bodies are explicitly e
 
 ## Contact & Updates
 New ADC monthly reports are typically released mid-month. Pull requests adding the latest PDFs and re-running the pipeline are very welcome.
+
+#!/bin/bash
+pip install -r requirements.txt  # Assumes venv activated
+echo "Download raw zips from https://doi.org/10.5281/zenodo.17663528 if needed"
+python src/01_ocr_and_parse.py
+python src/02_clean_and_align.py
+python src/03_permutation_tests.py
+echo "Done—check results/ for outputs"
 
 Maintained by a former Arkansas correctional officer, 19D
