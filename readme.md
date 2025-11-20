@@ -42,12 +42,4 @@ Journalists, researchers, advocacy groups, and oversight bodies are explicitly e
 ## Contact & Updates
 New ADC monthly reports are typically released mid-month. Pull requests adding the latest PDFs and re-running the pipeline are very welcome.
 
-#!/bin/bash
-pip install -r requirements.txt  # Assumes venv activated
-echo "Download raw zips from https://doi.org/10.5281/zenodo.17663528 if needed"
-python src/01_ocr_and_parse.py
-python src/02_clean_and_align.py
-python src/03_permutation_tests.py
-echo "Done—check results/ for outputs"
-
-Maintained by a former Arkansas correctional officer, 19D
+Maintained by a former Arkansas correctional officer and 19D veteran
