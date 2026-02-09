@@ -86,7 +86,8 @@ Arkansas-Department-of-Corrections-2015-2025-Timeline/
 └── Copilot_Opus_4.6_Analysis/         # Independent verification workstation
     ├── README.md
     └── Verification_Reports/
-        └── core_data_verification.md  # ✅ Data quality and claims verification
+        ├── core_data_verification.md  # ✅ Data quality and claims verification
+        └── data_interpretation_guide.md # 📊 Guide to interpreting the CSV data
 ```
 
 ---

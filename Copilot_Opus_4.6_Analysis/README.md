@@ -14,7 +14,8 @@ This folder serves as the working directory for independent verification, supple
 Copilot_Opus_4.6_Analysis/
 ├── README.md                    # This file
 ├── Verification_Reports/        # Independent data verification and source cross-checks
-│   └── core_data_verification.md
+│   ├── core_data_verification.md
+│   └── data_interpretation_guide.md
 └── Archived/                    # Superseded files (preserved, not deleted)
 ```
 
