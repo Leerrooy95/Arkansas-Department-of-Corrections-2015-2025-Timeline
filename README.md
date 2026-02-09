@@ -26,7 +26,7 @@ From January 2015 to March 2025, the Arkansas Department of Corrections publishe
 
 This repository:
 - OCR-extracts and aligns all 287 monthly reports into a single, clean CSV
-- Constructs a reproducible monthly time series (January 2015 – August 2025)
+- Constructs a reproducible monthly time series (January 2015 – December 2025, with data through August 2025)
 - Performs non-parametric statistical tests on two observed anomalies:
   - Systematic population surges every March
   - Elevated deaths occurring approximately 90 days after large parole/release cohorts
@@ -116,7 +116,7 @@ Core statistical claims have been independently verified. See [`Copilot_Opus_4.6
 | Claim | Status |
 |-------|--------|
 | 287 monthly PDF reports extracted via OCR | ✅ Verified |
-| Monthly time series spans January 2015 – August 2025 | ✅ Verified (132 data rows) |
+| Monthly time series spans January 2015 – December 2025 | ✅ Verified (132 rows, data through August 2025) |
 | March population surge: +1,126 inmates avg | ✅ Methodology verified (permutation test) |
 | Deaths-parole lag correlation (90-day) | ✅ Methodology verified (Pearson r with permutation) |
 | Death trends consistent with independent reporting | ✅ Corroborated by White River Now (Dec 2025) |
