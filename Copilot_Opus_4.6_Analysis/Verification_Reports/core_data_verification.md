@@ -53,10 +53,10 @@ Actual Arkansas prison population during this period was approximately 17,000+ i
 **Verification**:
 - Using the data in `ADC_FINAL_CLEAN.csv`, the March keyword count difference we computed is **+137.5** (mean March: 150.3 vs. non-March: 12.8)
 - The March spike in keyword mentions is clearly real and statistically significant — March reports contain dramatically more population-related content
-- The "+1,126" figure cited in the README likely comes from a different version of the dataset (`~/ADC_OCR_COMPLETE_UPDATED.csv` referenced in the Python script, which is not included in the repository)
+- The "+1,126" figure cited in the README likely comes from the full dataset (`ADC_OCR_COMPLETE_UPDATED.csv` referenced in the Python script), which is too large for GitHub and is preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528)
 - **The qualitative finding holds**: March reports are statistically different from other months in their population-related content
 
-**Status**: ⚠️ The directional finding is verified, but the exact magnitude (+1,126) cannot be reproduced from the data files currently in the repository. The Python script references a local file path not included in the repo.
+**Status**: ⚠️ The directional finding is verified, but the exact magnitude (+1,126) cannot be reproduced from the summary CSV files in the repository. The full dataset is in the Zenodo archive.
 
 ### Deaths-Parole Lag Correlation
 
@@ -65,9 +65,9 @@ Actual Arkansas prison population during this period was approximately 17,000+ i
 **Verification**:
 - The permutation test methodology (10,000 iterations, 3-month lag, Pearson r) is statistically sound
 - A temporal correlation in keyword frequencies across monthly reports is a meaningful signal — it reflects how ADC's reporting patterns connect parole activity with subsequent death reporting
-- The exact r-value and p-value cannot be reproduced without the referenced dataset
+- The exact r-value and p-value cannot be reproduced without the full dataset (available in the Zenodo archive)
 
-**Status**: ⚠️ Methodology verified as sound. Exact figures depend on the unreferenced source dataset.
+**Status**: ⚠️ Methodology verified as sound. Exact figures depend on the full dataset in the Zenodo archive.
 
 ---
 
@@ -131,12 +131,12 @@ The Arkansas Advocate began its "Overcrowded" series approximately one month aft
 | Implementation | ✅ Correct: random permutation of observed values, comparison to observed statistic |
 | Iteration count | ✅ 10,000 iterations provides adequate precision |
 | Lag specification | ✅ 3-month shift (90 days) is reasonable |
-| Data reference | ⚠️ Script references `~/ADC_OCR_COMPLETE_UPDATED.csv` which is not in the repository |
+| Data reference | ⚠️ Script references `~/ADC_OCR_COMPLETE_UPDATED.csv` — the full dataset, too large for GitHub, preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528) |
 | Dependencies | pandas, numpy, scipy, tqdm — standard scientific Python stack |
 
 ### Recommendation
 
-The script would benefit from updating the file path to reference the repository's actual data files (e.g., `ADC_FINAL_CLEAN.csv`) so that the analysis is fully reproducible from the repository contents alone.
+The script references `~/ADC_OCR_COMPLETE_UPDATED.csv`, which is the full dataset preserved in the Zenodo archive (too large for GitHub). Users who download the full archive from Zenodo can run the script after updating the file path to their local copy.
 
 ---
 

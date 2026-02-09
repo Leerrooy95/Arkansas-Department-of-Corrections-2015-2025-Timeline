@@ -82,13 +82,17 @@ Arkansas-Department-of-Corrections-2015-2025-Timeline/
 ├── ADC_Complete_Timeline.png          # Visualization: full timeline
 ├── ADC_Deaths_After_Parole.png        # Visualization: deaths vs. parole lag
 ├── ADC_March_Spikes.png               # Visualization: March population spikes
-├── ADC_AddOns.zip                     # Supplementary materials archive
+├── ADC_AddOns.zip                     # Supplementary PDFs (43 files: budget schedules, facility reports)
 └── Copilot_Opus_4.6_Analysis/         # Independent verification workstation
     ├── README.md
     └── Verification_Reports/
         ├── core_data_verification.md  # ✅ Data quality and claims verification
         └── data_interpretation_guide.md # 📊 Guide to interpreting the CSV data
 ```
+
+### Files in the Zenodo Archive (Too Large for GitHub)
+
+The full dataset referenced by the analysis script (`ADC_OCR_COMPLETE_UPDATED.csv`) and the 287 source PDFs (~2.8 GB) are preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528). These files exceeded GitHub's size limits and are hosted externally for reproducibility.
 
 ---
 
