@@ -73,6 +73,8 @@ Since this repository was created in November 2025, independent reporting has co
 ```
 Arkansas-Department-of-Corrections-2015-2025-Timeline/
 ├── README.md                          # This file
+├── CITATION.cff                       # Zenodo citation metadata
+├── ADC_OCR_COMPLETE_UPDATED.csv       # Full combined dataset (used by analysis script)
 ├── ADC_FINAL_CLEAN.csv                # Cleaned monthly death/parole/population (132 months)
 ├── ADC_FULL_TIMELINE.csv              # Full monthly time series (2015–2025)
 ├── ADC_OCR_COMPLETE.csv               # Complete OCR-extracted data from all 287 PDFs
@@ -90,9 +92,7 @@ Arkansas-Department-of-Corrections-2015-2025-Timeline/
         └── data_interpretation_guide.md # 📊 Guide to interpreting the CSV data
 ```
 
-### Files in the Zenodo Archive (Too Large for GitHub)
-
-The full dataset referenced by the analysis script (`ADC_OCR_COMPLETE_UPDATED.csv`) and the 287 source PDFs (~2.8 GB) are preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528). These files exceeded GitHub's size limits and are hosted externally for reproducibility.
+The 287 source PDFs (~2.8 GB) are preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528) for full reproducibility.
 
 ---
 
@@ -159,7 +159,7 @@ Core statistical claims have been independently verified. See [`Copilot_Opus_4.6
 - The CSV datasets were produced via OCR extraction from scanned PDFs. While key figures have been verified, individual row-level accuracy may vary due to OCR artifacts in the source documents.
 - Several months in 2024–2025 show zero values across all metrics, likely reflecting reports not yet available at time of extraction rather than actual zero activity.
 - The statistical tests identify correlations and patterns. They do not make claims about causation, policy intent, or institutional motivation.
-- The Zenodo DOI (10.5281/zenodo.17663528) may not be publicly accessible yet. If the link does not resolve, the source PDFs are available from [doc.arkansas.gov](https://doc.arkansas.gov/office-of-the-secretary/secretarys-reports/).
+- The Zenodo archive ([DOI: 10.5281/zenodo.17663528](https://doi.org/10.5281/zenodo.17663528)) preserves the full 287 source PDFs for reproducibility. See `CITATION.cff` for citation details.
 
 ---
 

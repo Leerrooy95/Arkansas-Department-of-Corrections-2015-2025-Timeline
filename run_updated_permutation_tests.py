@@ -4,7 +4,7 @@ import numpy as np
 from scipy.stats import pearsonr
 from tqdm import tqdm
 
-df = pd.read_csv("~/ADC_OCR_COMPLETE_UPDATED.csv", index_col=0)
+df = pd.read_csv("ADC_OCR_COMPLETE_UPDATED.csv", index_col=0)
 df.index = pd.to_datetime(df.index, errors='coerce')
 df = df.dropna().fillna(0)
 

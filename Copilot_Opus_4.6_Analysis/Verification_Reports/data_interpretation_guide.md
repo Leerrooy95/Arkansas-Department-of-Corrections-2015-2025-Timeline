@@ -55,7 +55,7 @@ The year range (1992–2026) extends beyond the 2015–2025 monthly data because
 ## Recommendations for Researchers
 
 1. **For keyword frequency analysis**: Use the monthly CSV files as-is. The permutation tests are appropriate for this data type.
-2. **For the full dataset**: The complete dataset (`ADC_OCR_COMPLETE_UPDATED.csv`) used by the analysis script is too large for GitHub and is preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528) alongside the 287 source PDFs.
+2. **For the full dataset**: The complete combined dataset (`ADC_OCR_COMPLETE_UPDATED.csv`) is included in the repository and is the file used by `run_updated_permutation_tests.py`. The 287 source PDFs are preserved in the [Zenodo archive](https://doi.org/10.5281/zenodo.17663528).
 3. **For actual population/death counts**: Cross-reference with the [ADC Secretary's Reports](https://doc.arkansas.gov/office-of-the-secretary/secretarys-reports/) and the Director's Board Reports available at media.ark.org.
 4. **For expenditure data**: See the companion repository [Arkansas-DOC-Expenditures-2015-2025](https://github.com/Leerrooy95/Arkansas-DOC-Expenditures-2015-2025).
 

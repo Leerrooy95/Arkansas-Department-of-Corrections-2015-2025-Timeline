@@ -31,6 +31,7 @@ Copilot_Opus_4.6_Analysis/
 | Date | Action |
 |------|--------|
 | 2026-02-09 | Initial setup: created workstation, verified core data points, reviewed statistical methodology, cross-referenced with independent reporting |
+| 2026-02-09 | Updated: full dataset (`ADC_OCR_COMPLETE_UPDATED.csv`) added to repo by maintainer, script path fixed, Zenodo confirmed active, verification reports updated |
 
 ---
 
